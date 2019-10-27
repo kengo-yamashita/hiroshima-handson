@@ -1,13 +1,15 @@
 <mat-form-field appearance="outline">
    <mat-label>ユーザID</mat-label>
-   <input matInput placeholder="id">
+   <input matInput placeholder="id" id="userId" required [(ngModel)] = "userId" name="userId">
    <mat-icon matSuffix>sentiment_very_satisfied</mat-icon>
    <mat-hint>登録済みのID</mat-hint>
 </mat-form-field>
 
 <mat-form-field appearance="outline">
     <mat-label>パスワード</mat-label>
-    <input matInput placeholder="password">
+    <input matInput placeholder="password" id="password" required [(ngModel)] = "password" name="password">
     <mat-icon matSuffix>lock</mat-icon>
     <mat-hint>登録済みのパスワード</mat-hint>
 </mat-form-field>
+
+<p><button mat-raised-button (click)="login()">ログイン</button></p>

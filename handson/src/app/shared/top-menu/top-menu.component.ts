@@ -28,7 +28,7 @@ export class TopMenuComponent implements OnInit {
 
   openRegister(): void {
     const dialogRef = this.dialog.open(RegisterComponent, {
-      width: '400px',
+      width: '200px',
       data: {}
     });
 
