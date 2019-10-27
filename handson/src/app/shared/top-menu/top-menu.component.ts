@@ -7,6 +7,8 @@ import { Component, OnInit } from '@angular/core';
 })
 export class TopMenuComponent implements OnInit {
 
+  // app title
+  title = 'Handson';
   constructor() { }
 
   ngOnInit() {
