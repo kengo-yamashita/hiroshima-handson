@@ -5,10 +5,10 @@
     <span>{{title}}</span>
     <span class="spacer"></span>
     <div class="toolbar-button">
-      <button mat-stroked-button>ログイン</button>
+      <button mat-stroked-button (click)="openLogin()">ログイン</button>
     </div>
     <div class="toolbar-button">
-      <button mat-stroked-button>新規登録</button>
+      <button mat-stroked-button (click)="openRegister()">新規登録</button>
     </div>
   </mat-toolbar-row>
 
